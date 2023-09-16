@@ -1,9 +1,16 @@
 # Programa para calcular o juros
+import os
 
-valor_inicial = float(input("digite o valor inicial:"))
-taxa anual = float(input("digite a taxa anual em porcentagem"))
-tempo_anos =float (input("digite o tempo em anos: "))
+print("============================================")
+print("============== JUROS PRO 1000 ==============")
+print("============================================")
 
-montante = valor inicial + (valor inical* (taxa_anual / 100) * tempo_anos)
+valor_inicial = float(input("Digite o valor inicial: "))
+taxa_anual = float(input("Digite a taxa anual em porcentagem: "))
+tempo_anos = float(input("Digite o tempo em anos: "))
 
-"O valor total será de: {montante}")
+montante = valor_inicial + (valor_inicial * (taxa_anual / 100) * tempo_anos)
+
+os.system('cls' if os.name == 'nt' else 'clear')
+
+print(f"O valor total será de: {montante}")
